@@ -1,0 +1,4 @@
+role,organisation,startDate,endDate,experiences,imageSrc
+Software Engineer,Google,"Sept, 2022",Present,"[""Worked on Google Maps"",""Reduced load times by 50%""]",history/google.png
+UI Designer,Mirosoft,"Aug, 2021","Aug, 2022","[""Worked on Windows 11"",""Designed the control panel""]",history/microsoft.png
+SWE Intern,Netflix,"Apr, 2020","Jun, 2020","[""Worked on component library"",""Helped create UI components""]",history/netflix.png

@@ -1,0 +1,4 @@
+title,imageSrc,description,skills,demo,source
+Project A,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",https://www.example.com,https://www.github.com
+Project B,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node"",""Sass""]",https://www.example.com,https://www.github.com
+Project C,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",https://www.example.com,https://www.github.com
