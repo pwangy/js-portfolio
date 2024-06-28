@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peggy Wang frontend web developer portfolio">
+  <meta name="keywords" content="JavaScript, React, React Hooks, CSS, Redux, Developer, Portfolio">
+  <meta name="author" content="Peggy Wang | Portfolio">
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico" type="image/ico">
+  <title>Peggy Wang | Developer Portfolio</title>
+</head>
+<body>
+
+  <!-- hero block -->
+  <section>
+    <article class="hero"> 
+      <div class="socials">
+            <a href="https://www.linkedin.com/in/peggywang/" target="_blank">
+              <div class="social-link" >
+                <img id="linkedin" src="/img/ico_li.png" alt="LinkedIn icon and link"
+                />
+              </div>
+            </a>
+            <a href="https://github.com/pwangy" target="_blank">
+              <div class="social-link">
+                <img id="github" src="/img/ico_github.svg" alt="Github icon and link"/>
+              </div>
+            </a>
+            <a href="mailto:hello@blipsandclicks.com" target="_blank">
+              <div class="social-link">
+                <img id="email" src="/img/ico_email.png" alt="email icon and link"/>
+              </div>
+            </a>
+      </div>
+      <div class="overlay-txt">
+        <div id="topline">
+          <p id="label">PORTFOLIO:</p>
+          <h1>PEGGY WANG</h1>
+        </div>
+        <h2>frontend developer</h2>
+        <h3>+ designer</h3>
+      </div>
+      <div class="img-container">
+        <div class="profile-img" /> 
+      </div>
+    </article>
+    <article class="box-intro">
+      <div>
+        <div id="symbol">
+          <div id="line"></div>
+          <div id="dot"></div>
+        </div>
+        <p id="intro">
+          I'm a frontend developer who sees the world through the lens of design. With a range of experience from customer support to leading cross-functional teams supporting innovation and product improvements, I feel that I bring value to an employer in my ability to create trusting relationships both internally and with clients. For me, this is the foundation for creating real value for customers and the company I work with.
+      </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- tech block -->
+  <section>
+    <article class="box-tech">
+      <div>
+        <h4>TECH</h4>
+          <p>HTML, CSS, Flexbox, JavaScript ES6, JSX, React, React Hooks, Redux, React Native, Node.js, Mongo DB, Web Accessibly, API:s, mob- & pair-programming, Github, UX, Adobe Cloud.</p>
+          <!-- Grid, SASS, SEO -->
+      </div>   
+    </article>
+  </section>
+
+  <!-- projects -->
+  <!-- max 6 -->
+  <section>
+    <article class="box-projects">
+      <h4>FEATURED PROJECTS</h4>
+        <div class="project-margin">
+
+          <div class="project-card">
+            <!-- wk 16 -->
+            <a href="https://github.com/pwangy/PROJECT-Labyrinth" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_maze.jpg" alt="screenshot of labyrinth app">
+                <p class="layer">LABYRINTH</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>APP.</span> Pair-programming project to make a mini game. We used thunks around API calls in Redux.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">Redux</p>
+                <p class="tag">React</p>
+                <p class="tag">React Hooks</p>
+                <p class="tag">JSX</p>
+                <p class="tag">API</p>
+                <p class="tag">CSS in JavaScript</p>
+                <p class="tag">JavaScript ES6</p>
+
+              </article>
+            </a>
+          </div>
+
+          <!-- <div class="project-card"> -->
+            <!-- wk 15 -->
+            <!-- <a href="https://github.com/pwangy/PROJECT-To-Dos" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_.jpg" alt="screenshot of to do app">
+                <p class="layer">DONE</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>TO-DO APP.</span> Structuring a Redux store and interacting with it using selectors or dispatching actions. <span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React</p>
+                <p class="tag">Redux</p>
+                <p class="tag">Redux-toolkit</p>
+                <p class="tag">Styled-Components</p>
+                <p class="tag">JSX</p>
+              </article>
+            </a>
+          </div> -->
+
+          <div class="project-card">
+            <!-- wk 14 -->
+            <a href="https://github.com/pwangy/PROJECT-Redux-Quiz" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_quiz.jpg" alt="screenshot of redux quiz">
+                <p class="layer">GEEK QUIZ</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>APP.</span> Mob programming project resulting in a quiz app using a Redux for the first time. <span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React</p>
+                <p class="tag">Redux</p>
+                <p class="tag">Styled-Components</p>
+                <p class="tag">JSX</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <!-- wk 13 -->
+            <a href="https://github.com/pwangy/PROJECT-React-Native-App" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_native.jpg" alt="screenshot of react native app">
+                <p class="layer">ANIMAL CROSSING<br/>RANDOM VILLAGER GENERATOR</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>MOBILE APP.</span> My first mobile app using React Native and Styled-Components for the first time. It generates random characters from a popular video game.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React Native</p>
+                <p class="tag">React Hooks</p>
+                <p class="tag">Styled-Components</p>
+                <p class="tag">API</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <!-- wk 12 -->
+            <a href="https://github.com/pwangy/PROJECT-Movies" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_movies.jpg" alt="screenshot of movie app">
+                <p class="layer">MOVIE SITE</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>SITE.</span> Multi-page site built with React router fetching movie data from an API.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React</p>
+                <p class="tag">JavaScript ES6</p>
+                <p class="tag">JSX</p>
+                <p class="tag">CSS</p>
+                <p class="tag">API</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <!-- wk 11 -->
+            <a href="https://github.com/pwangy/PROJECT-Happy-Thoughts" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_happy.png" alt="screenshot of Happy Thoughts app">
+                <p class="layer">HAPPY THOUGHTS</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>APP.</span> React based app which fetches and posts to an API.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React</p>
+                <p class="tag">React Hooks</p>
+                <p class="tag">CSS</p>
+                <p class="tag">JSX</p>
+                <p class="tag">API</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <!-- wk 9 -->
+            <a href="https://github.com/pwangy/PROJECT-Music-Releases" target="_blank">
+              <article class="screenshot-container">
+                <img class="ss" src="img/thumb_music.jpg" alt="screenshot of music app">
+                <p class="layer">NEW MUSIC RELEASES</p>
+              </article>
+              <article class="project-desc">
+                <p class="desc-txt"><span>SITE.</span> Pair-programming project to deliver a Spotify clone using React components.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React</p>
+                <p class="tag">React Hooks</p>
+                <p class="tag">CSS</p>
+                <p class="tag">JSX</p>
+                <p class="tag">API</p>
+              </article>
+            </a>
+          </div>
+
+    </article>
+   </section>
+  <!-- other projects -->
+  <section>
+    <article class="other-projects">
+      <h5>OTHER PROJECTS</h5>
+        <div class="other-project-margin">
+
+          <div class="other-project-card">
+            <!-- wk10 -->
+            <a href="https://github.com/pwangy/PROJECT-Survey" target="_blank">
+              <article class="project-desc">
+                <p class="desc-txt"><span>SITE.</span> Survey form with React and useState.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">React Hooks</p>
+                <p class="tag">JSX</p>
+                <p class="tag">JavaScript ES6</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="other-project-card">
+            <!-- wk 6 -->
+            <a href="https://github.com/pwangy/PROJECT-Weather-App" target="_blank">
+              <article class="project-desc">
+                <p class="desc-txt"><span>APP.</span> Weather app built with JavaScript fetching from OpenWeather API.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">HTML5</p>
+                <p class="tag">CSS</p>
+                <p class="tag">API</p>
+                <p class="tag">JavaScript ES6</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="other-project-card">
+            <!-- wk 5 -->
+            <a href="https://github.com/pwangy/PROJECT-Cluedo" target="_blank">
+              <article class="project-desc">
+                <p class="desc-txt"><span>APP.</span> Cluedo Card randomizer which allows a user to pick a murderer, weapon, and room.<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">HTML5</p>
+                <p class="tag">CSS</p>
+                <p class="tag">JavaScript ES6</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="other-project-card">
+            <!-- wk 4-->
+            <a href="https://github.com/pwangy/PROJECT-Pizza-Bot" target="_blank">
+              <article class="project-desc">
+                <p class="desc-txt"><span>APP.</span> Pizza-bot built with JavaScript to practice writing functions and DOM manipulation. &#x2014; First Pair Programming project<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">HTML5</p>
+                <p class="tag">CSS</p>
+                <p class="tag">JavaScript ES6</p>
+              </article>
+            </a>
+          </div>
+
+          <div class="other-project-card">
+            <!-- wk 3 -->
+            <a href="https://github.com/pwangy/PROJECT-Business-Site" target="_blank">
+              <article class="project-desc">
+                <p class="desc-txt"><span>SITE.</span> Layout with focus on hero headers, web-forms, and accordion menus. &#x2014; First JavaScript project<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">HTML5</p>
+                <p class="tag">CSS</p>
+                <p class="tag">JavaScript ES6</p>
+              </article>   
+            </a>
+          </div>
+
+          <div class="other-project-card">
+            <!-- wk 2 -->
+            <a href="https://github.com/pwangy/PROJECT-News-Site" target="_blank">
+              <article class="project-desc">
+                <p class="desc-txt"><span>SITE.</span> Responsive layout using Flexbox and structured using the Box Model. &#x2014; First Technigo project<span> >></span></p>
+              </article>
+              <article class="project-tags">
+                <p class="tag">HTML5</p>
+                <p class="tag">CSS</p>
+              </article>
+            </a>
+          </div>
+    </article>
+  </section>
+
+  <!-- links to blog block -->
+  <!-- <section>
+    <article class="box-blog">
+      <div>
+        <h4>MY THOUGHTS</h4>
+        <article class="post-container">
+          <a href="#" target="_blank">
+            <img class="ss" src="/img/ex-thumb.png" alt="this is a placeholder image">
+            <article class="post-desc">
+              <p class="date">SEPT 2020</p>
+              <p class="post-title">This is a title</p>
+              <p class="post-intro">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel egestas libero, suscipit vehicula felis.<span> >></span></p>
+            </article>
+         </a>
+        </article>
+        <article class="post-container-">
+          <a href="#" target="_blank">
+            <img class="ss" src="/img/ex-thumb.png" alt="this is a placeholder image">
+            <article class="post-desc">
+              <p class="date">OCT 2020</p>
+              <p class="post-title">This is a title</p>
+              <p class="post-intro">Aenean diam neque, laoreet sit amet rutrum eget, semper id nisi. Integer orci diam, vehicula vehicula tellus sit amet, laoreet tempus enim. Suspendisse a cursus dui. Curabitur porta mattis euismod.<span> >></span></p>
+            </article>
+         </a>
+        </article> -->
+<!-- older blog posts -->
+          <!-- <h5>MORE THOUGHTS</h5>
+          
+          <article class="post-container-more">
+            <a href="#" target="_blank">
+              <p class="date-more">AUG 2020</p>
+              <p class="post-title-more">This is a title<span>&ensp;>></span></p>
+          </a>
+          </article>
+
+          <article class="post-container-more">
+            <a href="#" target="_blank">
+              <p class="date-more">JUL 2020</p>
+              <p class="post-title-more">This is another title<span>&ensp;>></span></p>
+          </a>
+          </article>
+
+          <article class="post-container-more">
+            <a href="#" target="_blank">
+              <p class="date-more">JUN 2020</p>
+              <p class="post-title-more">Thoughts on Things!<span>&ensp;>></span></p>
+          </a>
+          </article>
+
+          <article class="post-container-more">
+            <a href="#" target="_blank">
+              <p class="date-more">MAY 2020</p>
+              <p class="post-title-more">The last thought.<span>&ensp;>></span></p>
+          </a>
+          </article>
+       </div>
+      </article>
+  </section> -->
+    
+  <!-- skill block -->
+  <section>
+    <article class="box-skills">
+      <div class="margins">
+        <h4>SKILLS</h4>
+        <div class="skill-container">
+          <div class="left">
+            <h6>CODE</h6>
+            <p>JavaScript ES6</p>
+            <p>React</p>
+            <p>Redux</p>
+            <p>React Native</p>
+            <p>GitHub</p>
+            <p>CSS</p>
+            <p>HTML5</p>  
+          </div>
+
+          <div class="right">
+            <h6>TOOLBOX</h6>
+              <p>Adobe Cloud</p>
+              <p>BBEdit</p>
+              <p>JIRA</p>
+              <p>MS Access</p>
+              <p>MS Excel</p>
+              <p>Postman</p>
+              <p>PowerPoint</p>
+              <p>Principle</p>
+              <p>Sketch</p>
+              <p>Slack</p>
+              <p>Visual Studio Code</p>
+          </div>
+
+          <div class="left">
+            <h6>UPCOMING</h6>
+              <p>Node.js</p>
+              <p>MongoDB</p>
+              <p>Express</p>
+              <p>SASS</p>
+          </div>
+
+          <div class="right">
+            <h6>MORE</h6>
+              <p>Graphic Design</p>
+              <p>Product Design</p>
+              <p>UX Design</p>
+              <p>API:s</p>
+              <p>Web Accessability</p>
+              <p>Agile Methodology</p>
+              <p>Project Management</p>
+              <p>Team Leadership</p>
+              <p>Process Improvement</p>
+              <p>Knowledge Management</p>
+              <p>Innovation Management</p>
+              <p>Vendor Evaluation  & Management</p>
+              <p>Risk Detection and Mitigation</p>
+              <p>Offset Printing</p>
+              <p>Letterpress</p>
+          </div>
+        </div>  
+      </div>   
+    </article>
+  </section>
+
+  <!-- repeat links to socials -->
+<section>
+  <article class="socials-container">
+    <div class="margins">
+      <h4>FOR MORE</h4>
+    <div class="socials-fill">
+      <a href="https://www.linkedin.com/in/peggywang/" target="_blank">
+        <div class="social-link-fill" >
+          <img id="linkedin-fill" src="/img/ico_li_fill.svg" alt="LinkedIn icon and link"
+          />
+          <p class="link-label">LINKEDIN</p>
+        </div>
+      </a>
+      <a href="https://github.com/pwangy" target="_blank">
+        <div class="social-link-fill">
+          <img id="github-fill" src="/img/ico_github_fill.svg" alt="Github icon and link"/>
+          <p class="link-label">GITHUB</p>
+        </div>
+      </a>
+      <a href="mailto:hello@blipsandclicks.com" target="_blank">
+        <div class="social-link-fill">
+          <img id="email-fill" src="/img/ico_email_fill.png" alt="email icon and link"/>
+          <p class="link-label">EMAIL</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</article>
+</section>
+
+  <!-- footer/ contact info -->
+<footer>
+      <div class="footer">
+        <h4>CONTACT</h4>
+          <p id="caps">Peggy Wang</p>
+          <p id="regular">+46 07 61 07 73 15</p>
+          <p id="regular">hello@blipsandclicks.com</p>
+      </div>   
+    </article>
+</footer>
+</body>
+</html>

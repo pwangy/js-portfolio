@@ -1,0 +1,61 @@
+@import "../../vars.scss";
+
+.container {
+  width: 100vw;
+  margin-top: 120px;
+  padding: 58px 10%;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 23px;
+  background-color: var(--color-secondary);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text h2 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.text p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 26px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 831px) {
+  .container {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .text {
+    align-items: flex-start;
+  }
+
+  .links {
+    align-items: flex-start;
+  }
+}
