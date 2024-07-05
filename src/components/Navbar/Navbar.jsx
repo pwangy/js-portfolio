@@ -1,15 +1,26 @@
 import { useState } from 'react'
 import styles from './Navbar.module.scss'
-import { getImageUrl } from '../../utils'
+// import { Burger } from './Burger'
+// import { getImageUrl } from '../../utils'
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <nav className={styles.navbar}>
-            <a className={styles.title} href='/'>Portfolio</a>
+            <div className={styles.leftWrap}>
+                <section className={styles.burger} onClick={() => setMenuOpen(!menuOpen)} alt='menu-button' >
+                    <div className={styles.burgerWrapper}>
+                        <span className={styles.bar} />
+                        <span className={styles.bar} />
+                        <span className={styles.bar} />
+                    </div>
+                </section>
+                <a className={styles.title} href='/'>Portfolio</a>
+            </div>
+ 
+
             <div className={styles.menu}>
-                <img className={styles.menuBtn} src={ menuOpen ? getImageUrl('nav/closeIcon.png') : getImageUrl('nav/menuIcon.png')} onClick={() => setMenuOpen(!menuOpen)} alt='menu-button' />
                 <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                     onClick={() => setMenuOpen(false)}>
                     <li><a href='#about'>About</a></li>

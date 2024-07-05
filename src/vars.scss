@@ -52,6 +52,9 @@ $font-text3: "Bitter", serif;
     --color-dark: #0b2447;
     --color-bg: #04152d;
 
-    // fonts
-    --font-opensans: #{$font-display};
+    // Typography
+    --font-display: #{$font-display};
+    --font-serif1: #{$font-text1};
+    --font-serif2: #{$font-text2};
+    --font-serif3: #{$font-text3};
 }

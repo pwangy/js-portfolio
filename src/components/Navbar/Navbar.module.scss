@@ -1,4 +1,4 @@
-@import '../../vars.scss';
+@import "../../vars.scss";
 
 .navbar {
     margin: 0 10%;
@@ -9,15 +9,16 @@
     justify-content: space-between;
     position: relative;
 }
+.leftWrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
 .title {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
-}
-.menuBtn {
-    display: block;
-    cursor: pointer;
+    background: rgb(83, 56, 13);
 }
 .menu {
     position: absolute;
@@ -28,7 +29,6 @@
     gap: 11px;
     z-index: 3;
 }
-
 .menuItems {
     padding: 24px 33px;
     list-style: none;
@@ -37,11 +37,7 @@
     gap: 13px;
     border-radius: 3px;
     background: rgb(25, 55, 109);
-    background: linear-gradient(
-    0deg,
-    rgba(25, 55, 109, 0.2) 0%,
-    rgba(25, 55, 109, 1) 100%
-    );
+    background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     display: none;
 }
@@ -55,6 +51,158 @@
     z-index: 1;
 }
 
+// .burgerWrapper {
+//     cursor: pointer;
+//     margin: auto;
+//     width: 50px;
+//     height: 40px;
+// }
+// .burgerWrapper .hamburger {
+//     background: #fff;
+//     width: 50px;
+//     height: 5px;
+//     position: relative;
+//     transition: background 10ms 300ms ease;
+//     transform: translateY(20px);
+// }
+// .burgerWrapper .hamburger:before,
+// .burgerWrapper .hamburger:after {
+//     transition:
+//         top 300ms 350ms ease,
+//         transform 300ms 50ms ease;
+//     position: absolute;
+//     // background: black;
+//     background: #fff;
+//     width: 50px;
+//     height: 5px;
+//     content: "";
+// }
+// .burgerWrapper .hamburger:before {
+//     top: -15px;
+// }
+// .burgerWrapper .hamburger:after {
+//     top: 15px;
+// }
+// .menuTrigger:checked ~ .burgerWrapper .hamburger {
+//     background: transparent;
+// }
+// .menuTrigger:checked ~ .burgerWrapper .hamburger:after,
+// .menuTrigger:checked ~ .burgerWrapper .hamburger:before {
+//     transition:
+//         top 300ms 50ms ease,
+//         transform 300ms 350ms ease;
+//     top: 0;
+// }
+// .menuTrigger:checked ~ .burgerWrapper .hamburger:before {
+//     transform: rotate(45deg);
+// }
+// .menuTrigger:checked ~ .burgerWrapper .hamburger:after {
+//     transform: rotate(-45deg);
+// }
+// .hidden {
+//     display: none;
+// }
+
+// Burger Menu
+.burgerWrapper {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+    border: 5px solid transparent;
+    border-radius: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.bar {
+    height: 0.25rem;
+    width: 2.5rem;
+    display: block;
+    // margin-bottom: 3px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.4s;
+    // position: absolute;
+}
+.burger {
+    // display: block;
+    // cursor: pointer;
+    background-color: var(--color-bg);
+}
+.burger .bar {
+    position: absolute;
+}
+.burger .bar:nth-of-type(1) {
+    top: 15px;
+    transition: top 0.3s ease 0.3s,
+        transform 0.3s ease-out 0.1s;
+    animation: mrotr 2s cubic-bezier(0.5, 0.2, 0.2, 1.01);
+}
+.burger .bar:nth-of-type(2) {
+    top: 30px;
+    transition: ease 0.3s 0.3s;
+    animation: fade 2s cubic-bezier(0.5, 0.2, 0.2, 1.01);
+}
+.burger .bar:nth-of-type(3) {
+    top: 45px;
+    transition:
+        top 0.3s ease 0.3s,
+        transform 0.3s ease-out 0.1s;
+    animation: mrotl 2s cubic-bezier(0.5, 0.2, 0.2, 1.01);
+}
+.burger .burgerWrapper:click .bar:nth-of-type(1) {
+    top: 30px;
+    transform: rotate(45deg);
+    transition:
+        top 0.3s ease 0.1s,
+        transform 0.3s ease-out 0.5s;
+}
+.burger .burgerWrapper:click .bar:nth-of-type(2) {
+    opacity: 0;
+}
+.burger .burgerWrapper:click .bar:nth-of-type(3) {
+    top: 30px;
+    transform: rotate(-45deg);
+    transition:
+        top 0.3s ease 0.1s,
+        transform 0.3s ease-out 0.5s;
+}
+
+// Animations
+@keyframes mrotr {
+    0% {
+        transform:(translateY(0px) rotate(0));
+    }
+    50% {
+        transform:(translateY(15px) rotate(0));
+    }
+    100% {
+        transform:(translateY(15px) rotate(45deg));
+    }
+}
+@keyframes mrotl {
+    0% {
+        transform:(translateY(0px) rotate(0));
+    }
+    50% {
+        transform:(translateY(-15px) rotate(0));
+    }
+    100% {
+        transform:(translateY(-15px) rotate(-45deg));
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+// Breakpoints
 @media only screen and (min-width: 831px) {
     .navbar {
         flex-direction: row;
