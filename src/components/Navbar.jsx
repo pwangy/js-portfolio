@@ -1,12 +1,10 @@
-import styles from './Navbar.module.scss'
-
 export const Navbar = () => {
     return (
-        <nav className={styles.navbar}>
-            <a className={styles.title} href='/'>Portfolio</a>
+        <nav className='navbar'>
+            <a className='title' href='/'>Portfolio</a>
 
-            <div className={styles.menu}>
-                <ul className={styles.menuItems}>
+            <div className='menu'>
+                <ul className='menuItems'>
                     <li><a href='#about'>About</a></li>
                     <li><a href='#experience'>Experience</a></li>
                     <li><a href='#projects'>Projects</a></li>
@@ -15,7 +13,3 @@ export const Navbar = () => {
             </div>
         </nav>
 )}
-
-// https://www.youtube.com/watch?v=YQCDUJ6hhNY&t=1974s
-
-// inc aria-labels
