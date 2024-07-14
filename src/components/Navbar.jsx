@@ -1,10 +1,9 @@
 export const Navbar = () => {
     return (
-        <nav className='navbar'>
-            <a className='title' href='/'>Portfolio</a>
-
+        <nav>
+            {/* <a className='title' href='/'>Portfolio</a> */}
             <div className='menu'>
-                <ul className='menuItems'>
+                <ul className='menuItems typeSpecial'>
                     <li><a href='#about'>About</a></li>
                     <li><a href='#experience'>Experience</a></li>
                     <li><a href='#projects'>Projects</a></li>

@@ -5,8 +5,8 @@ export const Projects = () => {
     const listProjects = projects.map((project, id) => <ProjectCard key={id} project={project} {...project} />)
 
     return (
-        <section className='pContainer' id='projects'>
-            <h2 className='pTitle'>Projects</h2>
-            <div className='projects'>{listProjects}</div>
+        <section className='container projects' id='projects'>
+            <h2>Projects</h2>
+            <div className='pWrapper'>{listProjects}</div>
         </section>
 )}

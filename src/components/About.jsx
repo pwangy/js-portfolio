@@ -2,11 +2,11 @@ import { getImageUrl } from '../utils'
 
 export const About = () => {
     return (
-        <section className='aboutContainer' id='about'>
-            <h2 className='aboutTitle'>About</h2>
+        <section className='container about' id='about'>
+            <h2>About</h2>
             <div className='aboutContent'>
                 <ul className='aboutItems'>
-                    <li className='aboutItem'>
+                    <li className='aboutItem gLight'>
                         <img src={getImageUrl('about/serverIcon.png')} alt='cursor icon' />
                         <div className='aboutItemText'>
                             <h3>Full Stack Developer</h3>
@@ -15,7 +15,7 @@ export const About = () => {
                             and APIs.</p>
                         </div>
                     </li>
-                    <li className='aboutItem'>
+                    <li className='aboutItem gLight'>
                         <img src={getImageUrl('about/cursorIcon.png')} alt='UI icon' />
                         <div className='aboutItemText'>
                             <h3>UI Designer</h3>

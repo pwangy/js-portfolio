@@ -5,14 +5,11 @@ import { getImageUrl } from '../utils'
 export const Experience = () => {
     const listSkills = skills.map((skill, id) => 
         <div key={id} className='skill'>
-            <div className='skillImageContainer'>
-                {/* <img src={getImageUrl(skill.imageSrc)} alt={skill.title} /> */}
-            </div>
             <p>{skill.title}</p>
         </div>)
 
     const listHistory = history.map((historyItem, id) => 
-        <li key={id} className='historyItem'>
+        <li key={id} className='historyItem gDark'>
                 <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} logo`} />
             <div className='historyItemDetails'>
                 <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
@@ -22,8 +19,8 @@ export const Experience = () => {
         </li>)
 
     return (
-        <section className='expContainer' id='experience'>
-            <h2 className='expTitle'>Experience</h2>
+        <section className='container exp gPuttySky' id='experience'>
+            <h2>Experience</h2>
             <div className='expWrapper'>
                 <div className='expContent'>
                     <div className='skills'>{listSkills}</div>
