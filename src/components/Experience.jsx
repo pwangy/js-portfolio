@@ -1,13 +1,7 @@
-import skills from '../data/skills.json'
 import history from '../data/history.json'
 import { getImageUrl } from '../utils'
 
 export const Experience = () => {
-    const listSkills = skills.map((skill, id) => 
-        <div key={id} className='skill'>
-            <p>{skill.title}</p>
-        </div>)
-
     const listHistory = history.map((historyItem, id) => 
         <li key={id} className='historyItem gDark'>
                 <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} logo`} />
@@ -22,9 +16,6 @@ export const Experience = () => {
         <section className='container exp gPuttySky' id='experience'>
             <h2>Experience</h2>
             <div className='expWrapper'>
-                <div className='expContent'>
-                    <div className='skills'>{listSkills}</div>
-                </div>
                 <ul className='history'>
                     {listHistory}
                 </ul>
