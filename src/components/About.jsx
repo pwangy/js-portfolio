@@ -3,23 +3,11 @@ import { getImageUrl } from '../utils'
 export const About = () => {
     return (
         <section className='container about' id='about'>
-            <h2 className='h2Dark'>About</h2>
             <div className='aboutContent'>
                 <ul className='aboutItems'>
                     <li className='aboutItem gLight'>
-                        <img src={getImageUrl('about/serverIcon.png')} alt='cursor icon' />
                         <div className='aboutItemText'>
-                            <h3>Full Stack Developer</h3>
-                            <p>I&apos;m a frontend developer with experience in building responsive
-                            and optimized sites. I have experience developing fast and optimised back-end systems
-                            and APIs.</p>
-                        </div>
-                    </li>
-                    <li className='aboutItem gLight'>
-                        <img src={getImageUrl('about/cursorIcon.png')} alt='UI icon' />
-                        <div className='aboutItemText'>
-                            <h3>UI Designer</h3>
-                            <p>I have designed multiple landing pages and have created design systems as well</p>
+                            <p>I&apos;m a frontend developer who sees the world through the lens of design. With a range of experience from customer support to leading cross-functional teams supporting innovation and product improvements, I feel that I bring value to an employer in my ability to create trusting relationships both internally and with clients. For me, this is the foundation for creating real value for customers and the company I work with.</p>
                         </div>
                     </li>
                 </ul>

@@ -14,8 +14,8 @@ $xl-h-lh: 80px;
 // contact info
 $h3: 24px;
 $h3-lh: 36px;
-$p: 20px;
-$p-lh: 40px;
+$p: 15px;
+$p-lh: 28px;
 // $nav: 16px; //bold, uppercase
 
 // <weight>: Use a value from 200 to 900
@@ -219,19 +219,19 @@ h1 {
   margin-left: 124px;
   height: 130px;
   width: 130px;
+  display: inline-flex;
+  align-self: flex-end;
+  position: relative;
+  background: transparent url("/src/assets/hero/profile.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-sizing: content-box;
   animation-name: floating;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  background: transparent url("/src/assets/hero/profile.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  box-sizing: content-box;
-  align-self: flex-end;
-  display: inline-flex;
-  position: relative;
 }
 @keyframes floating {
   0% {
@@ -257,36 +257,33 @@ h1 {
   filter: blur(100px);
   z-index: 0;
 }
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-.fa {
-  height: 1em;
-  width: 25px;
-  z-index: 1;
-  background-color: $accent;
-}
+// .bottomBlur {
+//   position: absolute;
+//   width: 70vw;
+//   height: 50vw;
+//   min-width: 350px;
+//   min-width: 250px;
+//   top: 246px;
+//   right: -25vw;
+//   border-radius: 764px;
+//   background: rgba(25, 55, 109, 0.7);
+//   filter: blur(100px);
+//   z-index: 0;
+// }
 
 // About
 .about {
   // background-color: transparent;
+  margin-top: -72px;
+  padding: 0 10% 10% 10%;
   flex-flow: column nowrap;
-  background: $navy;
+  background: $lt-accent;
+  z-index: 0;
 }
-// .about h2 {
-//   background: $wht;
-//   color: $dk-grey;
-// }
+.about h2 {
+  background: $wht;
+  color: $dk-grey;
+}
 .aboutContent {
   display: flex;
   flex-direction: column;
@@ -302,25 +299,23 @@ h1 {
   gap: 50px;
 }
 .aboutItem {
+  width: 100%;
   padding: 25px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
 }
-.aboutItem:hover {
-  background-size: 100% 100%;
-}
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: $p;
   font-weight: 600;
   font-family: $font-header;
-  color: $snow;
+  color: $navy;
 }
 .aboutItem p {
-  font-size: 25px;
-  color: $wht;
-  // font-family: $font-body;
+  font-size: 15px;
+  line-height: $p-lh;
+  color: $navy;
 }
 
 // Contact
@@ -499,11 +494,13 @@ h1 {
 /* Media Queries */
 @media only screen and (min-width: 321px) {
   .hero {
-    width: auto;
+    // margin: 0 15%;
+    width: 80%;
+    // background: green;
   }
   .heroImg {
-    margin-top: -80px;
-    margin-left: 125px;
+    margin-top: -86px;
+    margin-left: 175px;
   }
 } 
 
