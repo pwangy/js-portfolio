@@ -3,7 +3,7 @@ import { getImageUrl } from '../utils'
 export const About = () => {
     return (
         <section className='container about' id='about'>
-            <h2>About</h2>
+            <h2 className='h2Dark'>About</h2>
             <div className='aboutContent'>
                 <ul className='aboutItems'>
                     <li className='aboutItem gLight'>
