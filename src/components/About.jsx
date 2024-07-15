@@ -1,5 +1,3 @@
-import { getImageUrl } from '../utils'
-
 export const About = () => {
     return (
         <section className='container about' id='about'>
