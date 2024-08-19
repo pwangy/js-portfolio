@@ -1,39 +1,39 @@
 [
 	{
 		"title": "Wax Staxx",
-		"imageSrc": "projects/thumbs_weather.png",
+		"imageSrc": "projects/thumb_waxstaxx.jpg",
 		"description": "This is a project made to learn the latest languages by building an app.",
 		"skills": ["React", "Express", "Node"],
 		"demo": "waxstaxx.netlify.app/",
 		"source": "https://github.com/pwangy/phase-2-project-wax-staxx",
-		"featured": true
+		"featured": "true"
 	},
 	{
 		"title": "Pokemon Team Builder",
-		"imageSrc": "projects/thumbs_weather.png",
+		"imageSrc": "projects/thumb_poke.jpg",
 		"description": "This is a project made to learn the latest languages by building an app.",
 		"skills": ["React", "Express", "Node"],
 		"demo": "",
 		"source": "",
-		"featured": true
+		"featured": "true"
 	},
 	{
 		"title": "Sound Minds",
-		"imageSrc": "projects/thumb_maze.jpg",
+		"imageSrc": "projects/thumb_soundminds.jpg",
 		"description": "Home to Reason Studios' 2021 podcast series Sound Minds. Layout and web development.",
 		"skills": ["Django", "Python", "SASS", "Docker", "Jenkins"],
 		"demo": "",
 		"source": "",
-		"featured": ""
+		"featured": "true"
 	},
 	{
 		"title": "Project Auth",
-		"imageSrc": "projects/thumb_quiz.jpg",
+		"imageSrc": "projects/thumb_auth.jpg",
 		"description": "This is a project made to learn the latest languages by building an app.",
 		"skills": ["React", "Redux", "Styled Components"],
 		"demo": "",
 		"source": "",
-		"featured": true
+		"featured": "true"
 	},
 	{
 		"title": "Happy Thoughts API",
@@ -43,6 +43,33 @@
 		"demo": "https://pwangy-happy-v2.netlify.app/",
 		"source": "https://github.com/pwangy/PROJECT-Happy-Thoughts-v2",
 		"featured": true
+	},
+	{
+		"title": "Remember",
+		"imageSrc": "projects/thumb_remember.jpg",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "https://www.example.com",
+		"source": "https://www.github.com,",
+		"featured": "true"
+	},
+	{
+		"title": "Nerd Quiz",
+		"imageSrc": "projects/thumb_quiz.jpg",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "https://www.example.com",
+		"source": "https://www.github.com,",
+		"featured": "false"
+	},
+	{
+		"title": "Animal Crossing Random Image Generator",
+		"imageSrc": "projects/thumb_native.jpg",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "https://www.example.com",
+		"source": "https://www.github.com,",
+		"featured": "false"
 	},
 	{
 		"title": "Movie Site",
@@ -64,7 +91,7 @@
 	},
 	{
 		"title": "Portfolio v1",
-		"imageSrc": "projects/thumb_native.jpg",
+		"imageSrc": "projects/thumb_portfolio_v1.jpg",
 		"description": "An older and purely HTML and CSS version of this portfolio.",
 		"skills": ["HTML", "CSS"],
 		"demo": "",
@@ -72,11 +99,21 @@
 		"featured": ""
 	},
 	{
-		"title": "Project C",
-		"imageSrc": "projects/ex-thumb.png",
+		"title": "Weather App",
+		"imageSrc": "projects/thumbs_weather.png",
 		"description": "This is a project made to learn the latest languages by building an app.",
 		"skills": ["React", "Express", "Node"],
 		"demo": "https://www.example.com",
-		"source": "https://www.github.com,"
+		"source": "https://www.github.com,",
+		"featured": "false"
+	},
+	{
+		"title": "Cluedo",
+		"imageSrc": "projects/thumbs_clue.png",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "https://www.example.com",
+		"source": "https://www.github.com,",
+		"featured": "false"
 	}
 ]
