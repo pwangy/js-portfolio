@@ -22,6 +22,5 @@ export const Hero = () => {
             </article>
             <div className='heroImg' />
             <div className='topBlur' />
-            <div className='bottomBlur' />
         </section>
 )}

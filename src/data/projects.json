@@ -1,26 +1,82 @@
 [
-  {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  }
+	{
+		"title": "Wax Staxx",
+		"imageSrc": "projects/thumbs_weather.png",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "waxstaxx.netlify.app/",
+		"source": "https://github.com/pwangy/phase-2-project-wax-staxx",
+		"featured": true
+	},
+	{
+		"title": "Pokemon Team Builder",
+		"imageSrc": "projects/thumbs_weather.png",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "",
+		"source": "",
+		"featured": true
+	},
+	{
+		"title": "Sound Minds",
+		"imageSrc": "projects/thumb_maze.jpg",
+		"description": "Home to Reason Studios' 2021 podcast series Sound Minds. Layout and web development.",
+		"skills": ["Django", "Python", "SASS", "Docker", "Jenkins"],
+		"demo": "",
+		"source": "",
+		"featured": ""
+	},
+	{
+		"title": "Project Auth",
+		"imageSrc": "projects/thumb_quiz.jpg",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Redux", "Styled Components"],
+		"demo": "",
+		"source": "",
+		"featured": true
+	},
+	{
+		"title": "Happy Thoughts API",
+		"imageSrc": "projects/thumb_happy.png",
+		"description": "React based Twitter clone/ micro-blogging site.",
+		"skills": ["React", "Hooks", "API", "Express", "MongoDB"],
+		"demo": "https://pwangy-happy-v2.netlify.app/",
+		"source": "https://github.com/pwangy/PROJECT-Happy-Thoughts-v2",
+		"featured": true
+	},
+	{
+		"title": "Movie Site",
+		"imageSrc": "projects/thumb_movies.jpg",
+		"description": "Multi-page site built with React Router which fetches data from an external API.",
+		"skills": ["React", "Router", "API", "JSX", "CSS"],
+		"demo": "",
+		"source": "",
+		"featured": ""
+	},
+	{
+		"title": "New Music Releases",
+		"imageSrc": "projects/thumb_music.jpg",
+		"description": "Pair-programming project to build a Spotify clone using React components.",
+		"skills": ["React", "Hooks", "API", "JSX", "CSS"],
+		"demo": "",
+		"source": "",
+		"featured": ""
+	},
+	{
+		"title": "Portfolio v1",
+		"imageSrc": "projects/thumb_native.jpg",
+		"description": "An older and purely HTML and CSS version of this portfolio.",
+		"skills": ["HTML", "CSS"],
+		"demo": "",
+		"source": "",
+		"featured": ""
+	},
+	{
+		"title": "Project C",
+		"imageSrc": "projects/ex-thumb.png",
+		"description": "This is a project made to learn the latest languages by building an app.",
+		"skills": ["React", "Express", "Node"],
+		"demo": "https://www.example.com",
+		"source": "https://www.github.com,"
+	}
 ]

@@ -1,4 +1,10 @@
-title,imageSrc,description,skills,demo,source
-Project A,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",https://www.example.com,https://www.github.com
-Project B,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node"",""Sass""]",https://www.example.com,https://www.github.com
-Project C,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",https://www.example.com,https://www.github.com
+title,imageSrc,description,skills,demo,source,featured
+Wax Staxx,projects/thumbs_weather.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",waxstaxx.netlify.app/,https://github.com/pwangy/phase-2-project-wax-staxx,true
+Pokemon Team Builder,projects/thumbs_weather.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",,,true
+Sound Minds,projects/thumb_maze.jpg,Home to Reason Studios' 2021 podcast series Sound Minds. Layout and web development.,"[""Django"", ""Python"", ""SASS"", ""Docker"", ""Jenkins""]",,,
+Project Auth,projects/thumb_quiz.jpg,This is a project made to learn the latest languages by building an app.,"[""React"", ""Redux"", ""Styled Components""]",,,true
+Happy Thoughts API,projects/thumb_happy.png,React based Twitter clone/ micro-blogging site.,"[""React"", ""Hooks"", ""API"",  ""Express"", ""MongoDB""]",https://pwangy-happy-v2.netlify.app/,https://github.com/pwangy/PROJECT-Happy-Thoughts-v2,true
+Movie Site,projects/thumb_movies.jpg,Multi-page site built with React Router which fetches data from an external API.,"[""React"", ""Router"", ""API"", ""JSX"", ""CSS""]",,,
+New Music Releases,projects/thumb_music.jpg,Pair-programming project to build a Spotify clone using React components.,"[""React"", ""Hooks"", ""API"", ""JSX"", ""CSS""]",,,
+Portfolio v1,projects/thumb_native,An older and purely HTML and CSS version of this portfolio.,"[""HTML"", ""CSS""]",,,
+Project C,projects/project.png,This is a project made to learn the latest languages by building an app.,"[""React"",""Express"",""Node""]",https://www.example.com,https://www.github.com,
