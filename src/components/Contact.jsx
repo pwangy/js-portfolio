@@ -2,7 +2,7 @@ import { getImageUrl } from '../utils'
 
 export const Contact = () => {
     return (
-        <footer id='contact' className='container contact gLightThing'>
+        <footer id='contact' className='container contact'>
             <div className='contactText'>
                 <h2>Contact</h2>
                 {/* <p>Get in touch</p> */}

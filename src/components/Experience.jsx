@@ -13,7 +13,7 @@ export const Experience = () => {
         </li>)
 
     return (
-        <section className='container gBlue' id='experience'>
+        <section className='container' id='experience'>
             <h2 className='rmBottomMargin'>Experience</h2>
             <div className='expWrapper'>
                 <ul className='exp'>

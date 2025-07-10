@@ -8,7 +8,7 @@ export const Toolbox = () => {
         </div>)
 
     return (
-        <section className='container gPuttySky' id='experience'>
+        <section className='container' id='experience'>
             <h2>Skills </h2>
             <div className='expWrapper'>
                 <div className='expContent'>

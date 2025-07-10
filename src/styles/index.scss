@@ -48,6 +48,7 @@ $sap: #758155;
 $mid-grey: #808080;
 $grey: #4d4d4d;
 $dk-grey: #282828;
+$greenest: #061614;
 $plaster: #d7b7a6;
 $navy: #04152d;
 
@@ -86,9 +87,39 @@ $navy: #04152d;
     radial-gradient(at 79% 41%, hsla(159, 15%, 24%, 1) 0px, transparent 50%),
     radial-gradient(at 19% 80%, hsla(179, 24%, 47%, 1) 0px, transparent 50%);
 }
+
 .gName {
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
   background-clip: text;
+}
+
+.gDefault {
+  --_noise-texture: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><defs><filter id='n' x='0' y='0' width='100%' height='100%' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='3' stitchTiles='stitch' result='t'/><feColorMatrix type='saturate' values='0' in='t' result='g'/><feComponentTransfer in='g' result='a'><feFuncA type='linear' slope='0.5'/></feComponentTransfer></filter></defs><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+
+  --_noise-size: 5.2%;
+  --_gradient-blend-mode: difference;
+  --_gradient-blur: 0px;
+  --_gradient: radial-gradient(at 3.648544586477745% 2.347470238095238%, #5a7058 0px, transparent 50%),
+    radial-gradient(at 73.63160326505468% 51.71254960317461%, #243b34 0px, transparent 50%),
+    radial-gradient(at 77.7845358473352% 1.240645463049579%, #4e614a 0px, transparent 50%),
+    radial-gradient(at 40.181555538660376% 21.147100093545372%, #2c3a42 0px, transparent 50%),
+    radial-gradient(at 85.9525643000154% 0%, #223d32 0px, transparent 50%),
+    radial-gradient(at 20.99645772370245% 22.03000992063492%, #2c3a42 0px, transparent 50%);
+
+  background: var(--_gradient) #061614;
+  mix-blend-mode: var(--_gradient-blend-mode);
+
+  .noise {
+    background-image: var(--_noise-texture);
+    background-size: var(--_noise-size);
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  .frosted-backdrop {
+    backdrop-filter: blur(var(--_gradient-blur)) contrast(100%) brightness(100%);
+    -webkit-backdrop-filter: blur(var(--_gradient-blur)) contrast(100%) brightness(100%);
+  }
 }
 
 /*   */
@@ -103,15 +134,36 @@ html {
   font-family: $font-body;
   font-size: $p;
   font-weight: 400;
+  min-height: 100vh;
+  // background-color:;
   // line-height: $p-lh;
-  background-color: $accent;
 }
-.body {
-  background-color: $sap;
-  background: transparent url("/src/assets/bg.jpg") repeat;
+// Apply the mesh gradient as primary background
+html.gDefault {
+  @extend .gDefault;
+}
+
+.bg.gDefault {
+  // background-color: #061614;
+  // background: transparent url("/src/assets/bg.jpg") repeat;
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--_noise-texture);
+    background-size: var(--_noise-size);
+    background-position: center;
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: -1;
+  }
 }
 h2 {
   margin-bottom: 80px;
@@ -270,7 +322,7 @@ h1 {
   margin-top: -57px;
   padding: 0 10% 10% 10%;
   flex-flow: column nowrap;
-  background: $lt-accent;
+  // background: $lt-accent;
   z-index: 0;
 }
 .intro {
@@ -411,7 +463,7 @@ h1 {
 
 // Projects
 .projects {
-  background: $mid-grey;
+  // background: $mid-grey;
 }
 .pWrapper {
   display: flex;
