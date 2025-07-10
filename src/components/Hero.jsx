@@ -20,7 +20,7 @@ export const Hero = () => {
                     <img src={getImageUrl('contact/emailIcon.png')} alt='email icon' />
                 </a>
             </article>
-            <div className='heroImg' />
-            <div className='topBlur' />
+            {/* <div className='heroImg' /> */}
+            {/* <div className='topBlur' /> */}
         </section>
 )}

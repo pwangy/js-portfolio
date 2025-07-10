@@ -9,6 +9,7 @@ import { Contact } from './components/Contact'
 function App() {
 	return (
     <div className='body'>
+      <p>herro world!</p>
       <Navbar />
       <Hero />
       <About />
