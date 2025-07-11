@@ -3,18 +3,21 @@
     "label": "blipsandclicks@gmail.com",
     "href": "mailto:blipsandclicks@gmail.com",
     "iconName": "emailIcon.png",
-    "altText": "'email icon'"
+    "altText": "'Email icon'",
+    "aria": "'Send Email'"
   },
   {
     "label": "Linkedin.com/peggywang",
     "href": "https://www.linkedin.com/in/peggywang/",
     "iconName": "linkedinIcon.png",
-    "altText": "'LinkedIn icon'"
+    "altText": "'Linkedin icon'",
+    "aria": "'Linkedin profile'"
   },
   {
     "label": "github.com/pwangy",
     "href": "https://github.com/pwangy",
     "iconName": "githubIcon.png",
-    "altText": "'Github icon'"
+    "altText": "'Github icon'",
+    "aria": "'Github profile'"
   }
 ]

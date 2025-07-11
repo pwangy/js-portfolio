@@ -8,7 +8,7 @@ export const Contact = () => {
     ))
 
     return (
-        <footer id='contact' className='container contact'>
+        <footer id='contact' className='container contact' aria-label="Contact information">
             <div className='contactText'><h2>Contact</h2></div>
             <ul className='contactLinks'>{listSocials}</ul>
         </footer>

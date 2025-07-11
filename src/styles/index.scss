@@ -39,7 +39,6 @@ $p-lh: 27px;
 }
 
 // Color Palette
-// $wht: #fff;
 $snow: snow;
 $lt-accent: #e6e8e3;
 $mid-accent: #b2baab;
@@ -466,17 +465,19 @@ h1 {
   background: $mid-accent;
 }
 /* Media Queries */
+// mobileS: `max-width: 330px`,
+// mobileM: `max-width: 400px`,
+
 @media only screen and (min-width: 321px) {
   .hero {
     width: 80%;
     // background: green;
   }
-  .heroImg {
-    margin-top: -86px;
-    margin-left: 175px;
-  }
 }
 
+
+
+// >>    // mobileL: `max-width: 480px`,
 // Tablets
 @media only screen and (min-width: 481px) {
   nav {
@@ -494,16 +495,6 @@ h1 {
   .content {
     align-items: flex-start;
   }
-  .heroImg {
-    height: 190px;
-    width: 190px;
-    border: 4px solid #fff;
-    position: relative;
-  }
-  // .about {
-  //   background-color: rgba(12, 12, 12, 0.6);
-  //   padding: 73px;
-  // }
   .aboutContent {
     flex-direction: row;
   }
@@ -552,9 +543,7 @@ h1 {
   }
 }
 
-// mobileS: `max-width: 330px`,
-// mobileM: `max-width: 400px`,
-// >>    // mobileL: `max-width: 480px`,
+
 
 
 // tabletS: `max-width: 600px`,
@@ -569,10 +558,6 @@ h1 {
   .menuItems {
     gap: 3em;
     // background: cyan;
-  }
-  .heroImg {
-    height: 250px;
-    width: 250px;
   }
 }
 

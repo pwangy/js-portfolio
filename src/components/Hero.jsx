@@ -5,7 +5,7 @@ import { getImageUrl } from '../utils'
 
 export const Hero = () => {
     const listSocials = socials.map((social, id) => (
-        <SocialLink key={id} iconSrc={getImageUrl(`contact/${social.iconName}`)} href={social.href} altText={social.altText} external={social.external} />
+        <SocialLink key={id} iconSrc={getImageUrl(`contact/${social.iconName}`)} href={social.href} altText={social.altText} aria-label={social.aria} external={social.external} />
     ))
 
     return (
@@ -15,6 +15,6 @@ export const Hero = () => {
                 <p className='heroTitle'>Frontend Developer</p>
                 <p className='heroTitle'>+ Designer</p>
             </div>
-            <article className='socials'>{listSocials}</article>
+            <nav className='socials' aria-label='Social media links'>{listSocials}</nav>
         </section>
 )}

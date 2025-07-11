@@ -2,7 +2,7 @@ import projects from '../data/projects.json'
 import { ProjectCard } from './ProjectCard'
 
 export const Projects = () => {
-    const listProjects = projects.map((project, id) => <ProjectCard key={id} project={project} {...project} />)
+    const listProjects = projects.map((project, id) => <ProjectCard key={id} project={project} />)
 
     return (
         <section className='container projects' id='projects'>

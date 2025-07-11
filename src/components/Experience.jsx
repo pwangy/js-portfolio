@@ -13,7 +13,7 @@ export const Experience = () => {
         </li>)
 
     return (
-        <section className='container' id='experience'>
+        <section className='container' id='experienceandeducation' aria-label='Experience and Education'>
             <h2 className='rmBottomMargin'>Experience + Education</h2>
             <div className='expWrapper'>
                 <ul className='exp'>

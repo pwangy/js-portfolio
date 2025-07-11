@@ -1,5 +1,4 @@
 import skills from '../data/skills.json'
-// import { getImageUrl } from '../utils'
 
 export const Toolbox = () => {
     const listSkills = skills.map((skill, id) => 
