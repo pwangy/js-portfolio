@@ -9,11 +9,11 @@ export const Hero = () => {
     ))
 
     return (
-        <section className='container hero'>
-            <div className='heroText'>
-                <h1 className='typeHeader'>Peggy Wang</h1>
-                <p className='heroTitle'>Frontend Developer</p>
-                <p className='heroTitle'>+ Designer</p>
+        <section className='hero'>
+            <div className='hero-flex'>
+                <h1 className='type-header'>Peggy Wang</h1>
+                <p className='hero-title'>Frontend Engineer</p>
+                <p className='hero-title'>+ Designer</p>
             </div>
             <nav className='socials' aria-label='Social media links'>{listSocials}</nav>
         </section>

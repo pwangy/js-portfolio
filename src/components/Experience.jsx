@@ -14,7 +14,7 @@ export const Experience = () => {
 
     return (
         <section className='container' id='experienceandeducation' aria-label='Experience and Education'>
-            <h2 className='rmBottomMargin'>Experience + Education</h2>
+            <h2 className='noBottomMargin'>Experience + Education</h2>
             <div className='expWrapper'>
                 <ul className='exp'>
                     {listExp}

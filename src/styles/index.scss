@@ -19,19 +19,19 @@ $p-lh: 27px;
 // $nav: 16px; //bold, uppercase
 
 // <weight>: Use a value from 200 to 900
-.typeHeader {
+.type-header {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   // font-weight: 650;
   font-style: normal;
 }
-.typeDefault {
+.type-default {
   font-family: "Source Serif 4", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.typeSpecial {
+.type-special {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -39,18 +39,18 @@ $p-lh: 27px;
 }
 
 // Color Palette
-$snow: snow;
-$lt-accent: #e6e8e3;
-$mid-accent: #b2baab;
-$accent: #808c73;
-$sap: #758155;
-$mid-grey: #808080;
-$grey: #4d4d4d;
-$dk-grey: #282828;
-$plaster: #d7b7a6;
-$navy: #04152d;
+$snow: snow; //text
+$mid-accent: #b2baab; //project bg
+$sap: #758155; //skill chip
+$dk-grey: #282828; //project card txt
+$navy: #04152d; //nav and button text
+// $lt-accent: #e6e8e3;
+// $accent: #808c73;
+// $mid-grey: #808080;
+// $grey: #4d4d4d;
+// $plaster: #d7b7a6;
 
-// Gradients
+// Gradient
 .gDefault {
  --_noise-texture: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><defs><filter id='n' x='0' y='0' width='100%' height='100%' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='3' stitchTiles='stitch' result='t'/><feColorMatrix type='saturate' values='0' in='t' result='g'/><feComponentTransfer in='g' result='a'><feFuncA type='linear' slope='0.5'/></feComponentTransfer></filter></defs><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 
@@ -85,7 +85,6 @@ $navy: #04152d;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border-radius: 3px;
 }
 html {
   scroll-behavior: smooth;
@@ -93,12 +92,11 @@ html {
   font-size: $p;
   font-weight: 400;
   min-height: 100vh;
-  // line-height: $p-lh;
 }
 html.gDefault {
+  border-radius: 3px;
   @extend .gDefault;
 }
-
 .bg.gDefault {
   width: 100%;
   height: 100%;
@@ -118,24 +116,6 @@ html.gDefault {
     z-index: -1;
   }
 }
-h2 {
-  margin-bottom: 80px;
-  padding: 6px 16px;
-  font-family: $font-header;
-  font-size: $h2;
-  font-weight: $bold-semi;
-  color: $snow;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  // background: $navy;
-}
-.h2Dark {
-  color: $dk-grey;
-  background: $snow;
-}
-.rmBottomMargin {
-  margin-bottom: 0;
-}
 .container {
   padding: 70px 0;
   position: relative;
@@ -149,11 +129,14 @@ h2 {
 
 // Nav
 nav {
-  margin: 0 1em;
-  padding-top: 20px;
+  margin: 0 .5em 1em 0;
   z-index: 6;
 }
-.menuItems {
+nav ul {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
   list-style: none;
   text-transform: uppercase;
   gap: 1em;
@@ -163,7 +146,7 @@ nav {
   position: relative;
   background: none;
 }
-.menuItems a {
+.nav-list a {
   font-size: 12px;
   text-decoration: none;
   color: $navy;
@@ -171,14 +154,37 @@ nav {
 
 // Hero
 .hero {
-  padding: 10%;
+  padding: 8% 0 0 8%;
   width: 250px;
   display: block;
   // background: darkolivegreen;
 }
+.hero-flex {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  color: $snow;
+  // background: lightcoral;
+}
+h1 {
+  font-weight: 480;
+  font-size: 40px;
+  margin: 0 0 8px 0;
+  z-index: 2;
+}
+.hero-title {
+  margin: 2px 0;
+  font-size: 14px;
+  font-family: $font-header;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.hero-title:first-of-type {
+  margin-top: 6px;
+}
 .socials {
-  margin: 3px 0 0 0;
-  // height: 1.6em;
+  margin: 3px 0 8% 0;
   display: flex;
   gap: 3px;
   align-self: flex-start;
@@ -191,73 +197,7 @@ nav {
   margin: 0;
   padding: 0;
 }
-.heroText {
-  margin-bottom: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  align-self: flex-start;
-  color: $snow;
-  // background: darkmagenta;
-}
-h1 {
-  font-weight: 480;
-  font-size: 40px;
-  margin: 20px 0 6px 0;
-  z-index: 2;
-  // background: cyan;
-}
-.heroTitle {
-  margin: 3px 0;
-  font-size: 14px;
-  font-family: $font-header;
-  text-transform: uppercase;
-  z-index: 2;
-  // background: darkkhaki;
-}
-// .heroImg {
-//   margin-top: -62px;
-//   margin-left: 124px;
-//   height: 130px;
-//   width: 130px;
-//   display: inline-flex;
-//   align-self: flex-end;
-//   position: relative;
-//   background: transparent url("/src/assets/hero/profile.jpg") no-repeat;
-//   background-size: cover;
-//   object-fit: cover;
-//   border-radius: 50%;
-//   border: 3px solid #fff;
-//   box-sizing: content-box;
-//   animation-name: floating;
-//   animation-duration: 6s;
-//   animation-iteration-count: infinite;
-//   animation-timing-function: ease-in-out;
-// }
-// @keyframes floating {
-//   0% {
-//     transform: translate(0, 0px);
-//   }
-//   50% {
-//     transform: translate(0, 10px);
-//   }
-//   100% {
-//     transform: translate(0, -0px);
-//   }
-// }
-// .topBlur {
-//   position: absolute;
-//   width: 50vw;
-//   height: 50vw;
-//   min-width: 350px;
-//   min-width: 350px;
-//   top: -128px;
-//   left: -10vw;
-//   border-radius: 764px;
-//   background: rgba(25, 55, 109, 0.3);
-//   filter: blur(100px);
-//   z-index: 0;
-// }
+
 // About
 .about {
   margin-top: -57px;
@@ -320,6 +260,25 @@ h1 {
 }
 
 // Experience
+h2 {
+  margin-bottom: 80px;
+  padding: 6px 16px;
+  font-family: $font-header;
+  font-size: $h2;
+  font-weight: $bold-semi;
+  color: $snow;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  background: $navy;
+}
+.h2Dark {
+  color: $dk-grey;
+  background: $snow;
+}
+
+.noBottomMargin {
+  margin-bottom: 0;
+}
 .expWrapper {
   border-radius: none;
 }
@@ -403,9 +362,9 @@ h1 {
 }
 
 // Projects
-.projects {
-  // background: $mid-grey;
-}
+// .projects {
+//   // background: $mid-grey;
+// }
 .pWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -464,15 +423,19 @@ h1 {
   text-transform: uppercase;
   background: $mid-accent;
 }
+
+
+
+
 /* Media Queries */
 // mobileS: `max-width: 330px`,
 // mobileM: `max-width: 400px`,
 
 @media only screen and (min-width: 321px) {
-  .hero {
-    width: 80%;
-    // background: green;
-  }
+  // .hero {
+  //   // width: 80%;
+  //   // background: green;
+  // }
 }
 
 
@@ -485,7 +448,7 @@ h1 {
     z-index: 2;
     position: relative;
   }
-  .menuItems {
+  .menu-items {
     gap: 2em;
     display: flex;
   }
@@ -555,7 +518,7 @@ h1 {
     --_noise-size: 8.3%;
     --_gradient-blur: 0px;
   }
-  .menuItems {
+  .menu-items {
     gap: 3em;
     // background: cyan;
   }

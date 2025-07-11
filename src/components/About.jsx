@@ -13,4 +13,3 @@ export const About = () => {
 		</section>
 	)
 }
-// rewrite please!
