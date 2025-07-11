@@ -4,7 +4,7 @@ export const ProjectCard = ({
 	project: { title, imageSrc, description, skills, demo, source }
 }) => {
 	const listProjectSkills = skills.map((skill, id) => (
-		<li key={id} className='cardSkill typeSpecial'>
+		<li key={id} className='cardSkill type-special'>
 			{skill}
 		</li>
 	))

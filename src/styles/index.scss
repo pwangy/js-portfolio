@@ -3,20 +3,21 @@ $font-body: "Source Serif 4", serif; // default
 $font-header: "Source Sans 3", sans-serif; // specialty
 $font-var: "Source Code Pro", monospace; // links, buttons
 
+$light: 200;
 $regular: 400;
 $bold-semi: 600;
 $bold: 700;
 $bold-heavy: 900;
 
-$h2: 16px; // bold, uppercase
+$h2: 14px; // bold, uppercase
 $xl-h: 72px; //
 $xl-h-lh: 80px;
 // contact info
-$h3: 24px;
+$h3: 20px;
 $h3-lh: 36px;
-$p: 15px;
+$date: 12px;
+$p: 14px;
 $p-lh: 27px;
-// $nav: 16px; //bold, uppercase
 
 // <weight>: Use a value from 200 to 900
 .type-header {
@@ -91,6 +92,7 @@ html {
   font-family: $font-body;
   font-size: $p;
   font-weight: 400;
+  color: $snow;
   min-height: 100vh;
 }
 html.gDefault {
@@ -117,11 +119,10 @@ html.gDefault {
   }
 }
 .container {
-  padding: 70px 0;
+  padding: 70px 10% 10% 10%;
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap;
   justify-content: space-between;
   border-radius: 0;
   z-index: 1;
@@ -155,9 +156,8 @@ nav ul {
 // Hero
 .hero {
   padding: 8% 0 0 8%;
-  width: 250px;
+  width: 300px;
   display: block;
-  // background: darkolivegreen;
 }
 .hero-flex {
   margin-bottom: 16px;
@@ -165,12 +165,12 @@ nav ul {
   flex-direction: column;
   align-self: flex-start;
   color: $snow;
-  // background: lightcoral;
 }
 h1 {
+  margin: 0 0 12px 0;
   font-weight: 480;
   font-size: 40px;
-  margin: 0 0 8px 0;
+  letter-spacing: 1px;
   z-index: 2;
 }
 .hero-title {
@@ -178,17 +178,17 @@ h1 {
   font-size: 14px;
   font-family: $font-header;
   text-transform: uppercase;
+  letter-spacing: 4px;
   z-index: 2;
 }
 .hero-title:first-of-type {
   margin-top: 6px;
 }
 .socials {
-  margin: 3px 0 8% 0;
+  margin: 3px 0 130px 0;
   display: flex;
-  gap: 3px;
+  gap: 10px;
   align-self: flex-start;
-  // background: aquamarine;
 }
 .socials > a > img {
   height: 20px;
@@ -199,166 +199,66 @@ h1 {
 }
 
 // About
-.about {
-  margin-top: -57px;
-  padding: 0 10% 10% 10%;
-  flex-flow: column nowrap;
-  // background: $lt-accent;
-  z-index: 0;
-}
-.intro {
-  margin-top: 26px;
-  padding: 25px 0;
-  font-size: $p;
-  line-height: $p-lh;
-  color: $snow;
-  // background: lightblue;
-}
-
-// Contact
-.contact {
-  width: 100vw;
-  padding: 58px 10%;
-  justify-content: space-evenly;
-  gap: 23px;
-  // background: $sap;
-}
-.contactText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactText h2 {
-  // font-size: 80px;
-  // font-weight: 700;
-  letter-spacing: 4px;
-}
-.contactText p {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-.contactLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  gap: 26px;
-}
-.contactLink {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-.contactLink a {
-  font-size: $p;
-  font-weight: $bold-semi;
-  font-family: $font-var;
-  letter-spacing: 1.5px;
-  color: $navy;
-  text-decoration: none;
-}
-
-// Experience
 h2 {
-  margin-bottom: 80px;
-  padding: 6px 16px;
+  padding: 6px 0;
   font-family: $font-header;
   font-size: $h2;
   font-weight: $bold-semi;
   color: $snow;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  background: $navy;
 }
 .h2Dark {
-  color: $dk-grey;
-  background: $snow;
+  color: $snow;
+  background: $navy;
+}
+.about-text {
+  padding: 25px 0;
+  font-size: $p;
+  line-height: $p-lh;
+  color: $snow;
+  opacity: .8;
 }
 
-.noBottomMargin {
-  margin-bottom: 0;
-}
-.expWrapper {
-  border-radius: none;
-}
+// Experience
 .exp {
   width: 100%;
   margin-top: 34px;
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  // background: magenta;
+  gap: 45px;
 }
-.expItem {
+.exp-card {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 17px;
-  padding: 24px;
-  background: lightblue;
 }
-.expItem:hover {
-  border-radius: 0;
-  background: rgba(0, 0, 15, 0.1);
-}
-.expItem img {
-  width: 50px;
-  // background: $dk-grey;
-}
-.expItemDetails {
-  font-family: $font-body;
-  background: green;
-}
-// role and company
-.expItemDetails h3 {
+// title and org
+.exp-card h3 {
   font-family: $font-header;
-  font-size: 12px;
-  font-weight: 500;
-  background: cyan;
+  font-size: $h3;
+  font-weight: $light;
+}
+.exp-description {
+  font-family: $font-body;
+  font-size: $p;
 }
 // dates
-.expItemDetails p {
-  font-size: 10px;
-  font-weight: 300;
-  background: yellow;
+.exp-description p {
+  font-family: $font-header;
+  font-size: $date;
+  font-weight: $regular;
+  opacity: .3;
+  text-transform: uppercase;
+}
+.top-margin {
+  margin-top: 8px;
 }
 // role description
-.expItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 10px;
-  list-style-type: disc;
-  margin-left: 17px;
-  background: brown;
-}
-
-// Skills
-.expContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 14px;
-  gap: 34px;
-}
-.skills {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 37px;
-}
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 11px;
-}
-.skill p {
-  font-size: 25px;
-  font-family: $font-header;
-  font-weight: 500;
+.exp-description ul {
+  list-style: none;
+  font-weight: $regular;
+  opacity: .6;
 }
 
 // Projects
@@ -425,7 +325,49 @@ h2 {
 }
 
 
-
+// Contact
+.contact {
+  width: 100vw;
+  padding: 58px 10%;
+  justify-content: space-evenly;
+  gap: 23px;
+  // background: $sap;
+}
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactText h2 {
+  // font-size: 80px;
+  // font-weight: 700;
+  letter-spacing: 4px;
+}
+.contactText p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 26px;
+}
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.contactLink a {
+  font-size: $p;
+  font-weight: $bold-semi;
+  font-family: $font-var;
+  letter-spacing: 1.5px;
+  color: $navy;
+  text-decoration: none;
+}
 
 /* Media Queries */
 // mobileS: `max-width: 330px`,
@@ -491,10 +433,6 @@ h2 {
     justify-content: start;
     width: 45%;
     align-items: flex-start;
-  }
-  .skills {
-    align-items: flex-start;
-    justify-content: flex-start;
   }
   .exp {
     width: 45%;
