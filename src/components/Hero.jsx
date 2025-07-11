@@ -1,7 +1,13 @@
-// import '../styles/hero.scss'
+
+import socials from '../data/socials.json'
+import { SocialLink } from './SocialLink'
 import { getImageUrl } from '../utils'
 
 export const Hero = () => {
+    const listSocials = socials.map((social, id) => (
+        <SocialLink key={id} iconSrc={getImageUrl(`contact/${social.iconName}`)} href={social.href} altText={social.altText} external={social.external} />
+    ))
+
     return (
         <section className='container hero'>
             <div className='heroText'>
@@ -9,18 +15,6 @@ export const Hero = () => {
                 <p className='heroTitle'>Frontend Developer</p>
                 <p className='heroTitle'>+ Designer</p>
             </div>
-            <article className='socials'>
-                <a href='https://www.linkedin.com/in/peggywang/' target='_blank'>
-                    <img src={getImageUrl('contact/linkedinIcon.png')} alt='LinkedIn icon' />
-                </a>
-                <a href='https://github.com/pwangy' target='_blank'>
-                    <img src={getImageUrl('contact/githubIcon.png')} alt='Github icon' />
-                </a>
-                <a href='mailto:blipsandclicks@gmail.com' target='_blank'>
-                    <img src={getImageUrl('contact/emailIcon.png')} alt='email icon' />
-                </a>
-            </article>
-            {/* <div className='heroImg' /> */}
-            {/* <div className='topBlur' /> */}
+            <article className='socials'>{listSocials}</article>
         </section>
 )}

@@ -552,8 +552,16 @@ h1 {
   }
 }
 
+// mobileS: `max-width: 330px`,
+// mobileM: `max-width: 400px`,
+// >>    // mobileL: `max-width: 480px`,
+
+
+// tabletS: `max-width: 600px`,
+// >>    // tabletL: `max-width: 768px`,
+// desktopXS: `max-width: 900px`,
 // Laptops & Small
-@media only screen and (min-width: 510px) {
+@media only screen and (min-width: 520px) {
   .bg.gDefault {
     --_noise-size: 8.3%;
     --_gradient-blur: 0px;
@@ -567,7 +575,13 @@ h1 {
     width: 250px;
   }
 }
+
+
+//>>    // desktopS: `max-width: 1080px`,
+    // desktopM: `max-width: 1200px`,
+    // desktopL: `max-width: 1400px`,
 // Desktop & Large
 @media only screen and (min-width: 1025px) {
 }
 // look at: 1201 + TV and xl screens
+

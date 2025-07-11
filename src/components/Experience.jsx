@@ -14,7 +14,7 @@ export const Experience = () => {
 
     return (
         <section className='container' id='experience'>
-            <h2 className='rmBottomMargin'>Experience</h2>
+            <h2 className='rmBottomMargin'>Experience + Education</h2>
             <div className='expWrapper'>
                 <ul className='exp'>
                     {listExp}

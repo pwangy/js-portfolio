@@ -1,0 +1,20 @@
+[
+  {
+    "label": "blipsandclicks@gmail.com",
+    "href": "mailto:blipsandclicks@gmail.com",
+    "iconName": "emailIcon.png",
+    "altText": "'email icon'"
+  },
+  {
+    "label": "Linkedin.com/peggywang",
+    "href": "https://www.linkedin.com/in/peggywang/",
+    "iconName": "linkedinIcon.png",
+    "altText": "'LinkedIn icon'"
+  },
+  {
+    "label": "github.com/pwangy",
+    "href": "https://github.com/pwangy",
+    "iconName": "githubIcon.png",
+    "altText": "'Github icon'"
+  }
+]
