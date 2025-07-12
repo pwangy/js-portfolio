@@ -8,8 +8,8 @@ export const Contact = () => {
     ))
 
     return (
-        <footer id='contact' className='container contact' aria-label="Contact information">
-            <div className='contactText'><h2>Contact</h2></div>
-            <ul className='contactLinks'>{listSocials}</ul>
+        <footer id='contact' className='container' aria-label="Contact information">
+            <h2>Contact</h2>
+            <ul className='contact-container'>{listSocials}</ul>
         </footer>
 )}

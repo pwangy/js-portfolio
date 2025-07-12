@@ -190,7 +190,11 @@ h1 {
 }
 .socials > a > img {
   height: 20px;
+  opacity: .6;
 }
+.socials > a > img:hover {
+  opacity: 1;
+} 
 .socials > a {
   margin: 0;
   padding: 0;
@@ -327,47 +331,44 @@ h2 {
 }
 
 // Contact
-.contact {
+footer {
   width: 100vw;
-  padding: 58px 10%;
+  // padding: 58px 10%;
   justify-content: space-evenly;
-  gap: 23px;
+  // gap: 23px;
+  // background-color: $navy;
 }
-.contactText {
+.contact-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactText h2 {
-  // font-size: 80px;
-  // font-weight: 700;
-  letter-spacing: 4px;
-}
-.contactText p {
-  font-size: $large;
-  // font-weight: 400;
-  letter-spacing: 2px;
-}
-.contactLinks {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   list-style: none;
-  gap: 26px;
+  // gap: $content-gap;
+  // background-color: darkgrey;
 }
-.contactLink {
+.contact-link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
+  // background-color: $sap;
 }
-.contactLink a {
-  font-size: $default;
-  font-weight: $bold-semi;
-  font-family: $font-var;
-  letter-spacing: 1.5px;
+.contact-link a {
   color: $snow;
   text-decoration: none;
 }
+.contact-link span {
+  display: none;
+}
+.contact-link img {
+  height: 20px;
+  opacity: .6;
+}
+.contact-link img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
 
 /* Media Queries */
 // mobileS: `max-width: 330px`,
