@@ -1,41 +1,36 @@
 // Typograhy
 $font-body: "Source Serif 4", serif; // default
-$font-header: "Source Sans 3", sans-serif; // specialty
-$font-var: "Source Code Pro", monospace; // links, buttons
+$font-header: "Source Sans 3", sans-serif;
+$font-var: "Source Code Pro", monospace; // links, chips
 
-$light: 200;
+// Font Weights (200-900)
+$light: 200; // h3
 $regular: 400;
-$bold-semi: 600;
-$bold: 700;
-$bold-heavy: 900;
+$bold-heading: 480; // h1
+$bold-semi: 600; // h2, links
 
-$h2: 14px; // bold, uppercase
-$xl-h: 72px; //
-$xl-h-lh: 80px;
-// contact info
+// Font Sizes
+$small: 12px;
+$default: 14px; // bold, uppercase
 $h3: 20px;
-$h3-lh: 36px;
-$date: 12px;
-$p: 14px;
-$p-lh: 27px;
+$p-lh: 27px; // paragraph line height
+$large: 40px; // h1
 
-// <weight>: Use a value from 200 to 900
 .type-header {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
-  // font-weight: 650;
   font-style: normal;
 }
 .type-default {
   font-family: "Source Serif 4", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: $regular;
   font-style: normal;
 }
 .type-special {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: $bold-semi;
   font-style: normal;
 }
 
@@ -52,9 +47,8 @@ $navy: #04152d; //nav and button text
 // $plaster: #d7b7a6;
 
 // Gradient
-.gDefault {
+.default-bg {
  --_noise-texture: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><defs><filter id='n' x='0' y='0' width='100%' height='100%' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='3' stitchTiles='stitch' result='t'/><feColorMatrix type='saturate' values='0' in='t' result='g'/><feComponentTransfer in='g' result='a'><feFuncA type='linear' slope='0.5'/></feComponentTransfer></filter></defs><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-
   --_noise-size: .2%;
   --_gradient-blend-mode: difference;
   --_gradient-blur: 0px;
@@ -64,22 +58,29 @@ $navy: #04152d; //nav and button text
     radial-gradient(at 40.181555538660376% 21.147100093545372%, #2c3a42 0px, transparent 50%),
     radial-gradient(at 85.9525643000154% 0%, #223d32 0px, transparent 50%),
     radial-gradient(at 20.99645772370245% 22.03000992063492%, #2c3a42 0px, transparent 50%);
-
   background: var(--_gradient) #061614;
   mix-blend-mode: var(--_gradient-blend-mode);
-
   .noise {
     background-image: var(--_noise-texture);
     background-size: var(--_noise-size);
     background-position: center;
     background-repeat: repeat;
   }
-
   .frosted-backdrop {
     backdrop-filter: blur(var(--_gradient-blur)) contrast(100%) brightness(100%);
     -webkit-backdrop-filter: blur(var(--_gradient-blur)) contrast(100%) brightness(100%);
   }
 }
+
+// Spacing
+// Between Cards
+$card-gap: 45px;
+// Within Cards
+$content-gap: 8px;
+.card-spacer {
+  margin-top: $content-gap;
+} 
+// Between Sections: use .container
 
 /* Mobile */
 * {
@@ -90,16 +91,15 @@ $navy: #04152d; //nav and button text
 html {
   scroll-behavior: smooth;
   font-family: $font-body;
-  font-size: $p;
-  font-weight: 400;
+  font-size: $default;
+  font-weight: $regular;
   color: $snow;
   min-height: 100vh;
 }
-html.gDefault {
-  border-radius: 3px;
-  @extend .gDefault;
+html.default-bg {
+  @extend .default-bg;
 }
-.bg.gDefault {
+.bg.default-bg {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -118,13 +118,15 @@ html.gDefault {
     z-index: -1;
   }
 }
+.border-curve {
+  border-radius: 3px;
+}
 .container {
   padding: 70px 10% 10% 10%;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  border-radius: 0;
   z-index: 1;
 }
 
@@ -148,7 +150,7 @@ nav ul {
   background: none;
 }
 .nav-list a {
-  font-size: 12px;
+  font-size: $small;
   text-decoration: none;
   color: $navy;
 }
@@ -158,6 +160,7 @@ nav ul {
   padding: 8% 0 0 8%;
   width: 300px;
   display: block;
+  // background-color: magenta;
 }
 .hero-flex {
   margin-bottom: 16px;
@@ -168,14 +171,14 @@ nav ul {
 }
 h1 {
   margin: 0 0 12px 0;
-  font-weight: 480;
-  font-size: 40px;
+  font-weight: $bold-heading;
+  font-size: $large;
   letter-spacing: 1px;
   z-index: 2;
 }
 .hero-title {
   margin: 2px 0;
-  font-size: 14px;
+  font-size: $default;
   font-family: $font-header;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -185,7 +188,7 @@ h1 {
   margin-top: 6px;
 }
 .socials {
-  margin: 3px 0 130px 0;
+  margin: 3px 0 80px 0;
   display: flex;
   gap: 10px;
   align-self: flex-start;
@@ -200,21 +203,16 @@ h1 {
 
 // About
 h2 {
-  padding: 6px 0;
+  padding: 6px 0 35px 0;
   font-family: $font-header;
-  font-size: $h2;
+  font-size: $default;
   font-weight: $bold-semi;
   color: $snow;
   letter-spacing: 2.5px;
   text-transform: uppercase;
 }
-.h2Dark {
-  color: $snow;
-  background: $navy;
-}
 .about-text {
-  padding: 25px 0;
-  font-size: $p;
+  font-size: $default;
   line-height: $p-lh;
   color: $snow;
   opacity: .8;
@@ -223,15 +221,19 @@ h2 {
 // Experience
 .exp {
   width: 100%;
-  margin-top: 34px;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  justify-content: flex-start;
+  gap: $card-gap;
+}
+.exp div {
+  margin: 0;
+  padding: 0;
 }
 .exp-card {
   display: flex;
   flex-direction: row;
-  gap: 17px;
+  // background-color: #04152d;
 }
 // title and org
 .exp-card h3 {
@@ -241,18 +243,15 @@ h2 {
 }
 .exp-description {
   font-family: $font-body;
-  font-size: $p;
+  font-size: $default;
 }
 // dates
 .exp-description p {
   font-family: $font-header;
-  font-size: $date;
+  font-size: $small;
   font-weight: $regular;
   opacity: .3;
   text-transform: uppercase;
-}
-.top-margin {
-  margin-top: 8px;
 }
 // role description
 .exp-description ul {
@@ -262,68 +261,83 @@ h2 {
 }
 
 // Projects
-// .projects {
-//   // background: $mid-grey;
-// }
-.pWrapper {
+.project-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: $card-gap;
   width: 100%;
 }
 
 // Project Card
 .card {
   width: 300px;
-  box-sizing: none;
-  background: $dk-grey;
   padding: 0;
 }
-.cardImage {
+.card-thumbnail {
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 12px;
+  border-radius: 3%;
 }
-.cardTitle {
-  font-size: 25px;
-  font-weight: 700;
-}
-.description {
-  margin-top: 6px;
-  font-size: 25px;
-  font-weight: 400;
-}
-.cardSkills {
+.card-header {
   width: 100%;
-  margin-top: 14px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: baseline;
+  gap: 8px;
+}
+.card-header img {
+  height: 10px;
+}
+.card h3 {
+  font-family: $font-header;
+  font-size: $h3;
+  font-weight: $light;
+}
+
+.card-description {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: start;
+  font-weight: $regular;
+  opacity: .6;
+  background-color: $dk-grey;
+}
+.card-skills-container {
+  width: 100%;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
   list-style: none;
+  background-color: $mid-accent;
 }
-.cardSkill {
-  font-size: 16px;
-  font-weight: 400;
+.skill-chip {
+  font-size: $small;
+  font-weight: $regular;
   background: $sap;
-  padding: 2px 22px;
+  padding: 2px 6px;
+  opacity: .8;
 }
-.cardLinks {
+.card-link-container {
   width: 100%;
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-around;
+  // margin-top: 12px;
+  // display: flex;
+  // flex-flow: row wrap;
+  // gap: 10px;
+  // align-self: flex-start;
+  // background-color: $sap;
 }
-.cardLink {
-  padding: 1px 22px;
-  font-size: 16px;
-  font-weight: 600;
-  color: $navy;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: $mid-accent;
-}
+// .card-link img{
+//   height: 20px;
+//   // margin: 0;
+//   opacity: .8;
 
+// }
 
 // Contact
 .contact {
@@ -331,7 +345,6 @@ h2 {
   padding: 58px 10%;
   justify-content: space-evenly;
   gap: 23px;
-  // background: $sap;
 }
 .contactText {
   display: flex;
@@ -344,8 +357,8 @@ h2 {
   letter-spacing: 4px;
 }
 .contactText p {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: $large;
+  // font-weight: 400;
   letter-spacing: 2px;
 }
 .contactLinks {
@@ -361,11 +374,11 @@ h2 {
   gap: 25px;
 }
 .contactLink a {
-  font-size: $p;
+  font-size: $default;
   font-weight: $bold-semi;
   font-family: $font-var;
   letter-spacing: 1.5px;
-  color: $navy;
+  color: $snow;
   text-decoration: none;
 }
 
@@ -452,7 +465,7 @@ h2 {
 // desktopXS: `max-width: 900px`,
 // Laptops & Small
 @media only screen and (min-width: 520px) {
-  .bg.gDefault {
+  .bg.default-bg {
     --_noise-size: 8.3%;
     --_gradient-blur: 0px;
   }
@@ -470,4 +483,3 @@ h2 {
 @media only screen and (min-width: 1025px) {
 }
 // look at: 1201 + TV and xl screens
-

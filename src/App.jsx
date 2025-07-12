@@ -7,7 +7,7 @@ import { Contact } from './components/Contact'
 
 function App() {
 	return (
-    <div className='bg gDefault'>
+    <div className='bg default-bg'>
       <Navbar />
       <Hero />
       <About />
