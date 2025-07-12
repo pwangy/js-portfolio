@@ -12,6 +12,7 @@ export const ProjectCard = ({
 
 	return (
 		<div className='container card'>
+			{/* thumbnail */}
 			<img
 				src={getImageUrl(imageSrc)}
 				alt={`Screenshot of ${title} project`}
@@ -20,32 +21,24 @@ export const ProjectCard = ({
 			/>
 			<div className='card-header'>
 				<h3>{title}</h3>
-				{/* demo */}
-				<a
-					href={demo}
-					target='_blank'
-					rel='noopener noreferrer'>
-					<img
-						src={link}
-						className='link-ico'
-						alt='Link project demo'
-					/>
+				{/* demo link */}
+				<a href={demo} target='_blank' rel='noopener noreferrer'>
+					<img src={link} alt='Link project demo' />
 				</a>
 			</div>
-
-			{/* repo */}
-			<p className='card-description card-spacer'>
-				{description}{' '}
-				<a
-					href={source}
-					className='card-link type-special border-curve'
-					target='_blank'
-					rel='noopener noreferrer'>
-					<img src={github} alt='Link to GitHub repo' />
-				</a>
-				<span className='card-link-container'></span>
-			</p>
-
+			<p className='card-description card-spacer'>{description}</p>
+			{/* github link */}
+			<a
+				href={source}
+				className='card-spacer'
+				target='_blank'
+				rel='noopener noreferrer'>
+				<img
+					src={github}
+					className='source-link'
+					alt='Link to GitHub repo'
+				/>
+			</a>
 			{/* project skills */}
 			<ul
 				className='card-skills-container'

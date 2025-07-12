@@ -7,6 +7,6 @@ export const Projects = () => {
     return (
         <section className='container' id='projects' aria-label='Projects'>
             <h2>Projects</h2>
-            <div className='project-wrapper projects'>{listProjects}</div>
+            <div className='project-wrapper'>{listProjects}</div>
         </section>
 )}

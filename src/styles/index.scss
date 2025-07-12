@@ -12,6 +12,7 @@ $bold-semi: 600; // h2, links
 // Font Sizes
 $small: 12px;
 $default: 14px; // bold, uppercase
+$d-lh: 18px; // paragraph lineheight
 $h3: 20px;
 $p-lh: 27px; // paragraph line height
 $large: 40px; // h1
@@ -40,11 +41,6 @@ $mid-accent: #b2baab; //project bg
 $sap: #758155; //skill chip
 $dk-grey: #282828; //project card txt
 $navy: #04152d; //nav and button text
-// $lt-accent: #e6e8e3;
-// $accent: #808c73;
-// $mid-grey: #808080;
-// $grey: #4d4d4d;
-// $plaster: #d7b7a6;
 
 // Gradient
 .default-bg {
@@ -80,7 +76,7 @@ $content-gap: 8px;
 .card-spacer {
   margin-top: $content-gap;
 } 
-// Between Sections: use .container
+// Between Sections use .container
 
 /* Mobile */
 * {
@@ -160,7 +156,6 @@ nav ul {
   padding: 8% 0 0 8%;
   width: 300px;
   display: block;
-  // background-color: magenta;
 }
 .hero-flex {
   margin-bottom: 16px;
@@ -277,7 +272,7 @@ h2 {
 .card-thumbnail {
   width: 100%;
   margin-bottom: 12px;
-  border-radius: 3%;
+  border-radius: 3px;
 }
 .card-header {
   width: 100%;
@@ -287,24 +282,31 @@ h2 {
   align-items: baseline;
   gap: 8px;
 }
-.card-header img {
+.card-header img { //link to demo
   height: 10px;
+  opacity: .6
+}
+.card-header img:hover {
+  opacity: 1;
 }
 .card h3 {
   font-family: $font-header;
   font-size: $h3;
   font-weight: $light;
 }
-
 .card-description {
   list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: baseline;
-  justify-content: start;
+  display: block;
   font-weight: $regular;
+  line-height: $d-lh;
   opacity: .6;
-  background-color: $dk-grey;
+}
+.source-link { // gh link
+  height: 20px;
+  opacity: .7;
+}
+.source-link:hover {
+  opacity: 1;
 }
 .card-skills-container {
   width: 100%;
@@ -314,30 +316,15 @@ h2 {
   flex-wrap: wrap;
   gap: 10px;
   list-style: none;
-  background-color: $mid-accent;
 }
 .skill-chip {
   font-size: $small;
   font-weight: $regular;
+  color: $snow;
   background: $sap;
-  padding: 2px 6px;
+  padding: 3px 6px;
   opacity: .8;
 }
-.card-link-container {
-  width: 100%;
-  // margin-top: 12px;
-  // display: flex;
-  // flex-flow: row wrap;
-  // gap: 10px;
-  // align-self: flex-start;
-  // background-color: $sap;
-}
-// .card-link img{
-//   height: 20px;
-//   // margin: 0;
-//   opacity: .8;
-
-// }
 
 // Contact
 .contact {
