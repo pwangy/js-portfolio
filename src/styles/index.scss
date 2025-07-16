@@ -5,6 +5,7 @@ $font-var: "Source Code Pro", monospace; // links, chips
 
 // Font Weights (200-900)
 $light: 200; // h3
+$emphasis: 350; // h3
 $regular: 400;
 $bold-heading: 480; // h1
 $bold-semi: 600; // h2, links
@@ -41,11 +42,14 @@ $mid-accent: #b2baab; //project bg
 $sap: #758155; //skill chip
 $dk-grey: #282828; //project card txt
 $navy: #04152d; //nav and button text
+$navy-hover1: #1f1f7a;
+$navy-hover2: #262673;
+$navy-hover3: #2929a3;
 
 // Gradient
 .default-bg {
- --_noise-texture: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><defs><filter id='n' x='0' y='0' width='100%' height='100%' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='3' stitchTiles='stitch' result='t'/><feColorMatrix type='saturate' values='0' in='t' result='g'/><feComponentTransfer in='g' result='a'><feFuncA type='linear' slope='0.5'/></feComponentTransfer></filter></defs><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-  --_noise-size: .2%;
+  --_noise-texture: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><defs><filter id='n' x='0' y='0' width='100%' height='100%' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='3' stitchTiles='stitch' result='t'/><feColorMatrix type='saturate' values='0' in='t' result='g'/><feComponentTransfer in='g' result='a'><feFuncA type='linear' slope='0.5'/></feComponentTransfer></filter></defs><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --_noise-size: 0.2%;
   --_gradient-blend-mode: difference;
   --_gradient-blur: 0px;
   --_gradient: radial-gradient(at 3.648544586477745% 2.347470238095238%, #5a7058 0px, transparent 50%),
@@ -75,7 +79,7 @@ $card-gap: 45px;
 $content-gap: 8px;
 .card-spacer {
   margin-top: $content-gap;
-} 
+}
 // Between Sections use .container
 
 /* Mobile */
@@ -100,7 +104,7 @@ html.default-bg {
   height: 100%;
   overflow: hidden;
   &::before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -128,7 +132,7 @@ html.default-bg {
 
 // Nav
 nav {
-  margin: 0 .5em 1em 0;
+  margin: 0 0.5em 1em 0;
   z-index: 6;
 }
 nav ul {
@@ -190,11 +194,11 @@ h1 {
 }
 .socials > a > img {
   height: 20px;
-  opacity: .6;
+  opacity: 0.6;
 }
 .socials > a > img:hover {
   opacity: 1;
-} 
+}
 .socials > a {
   margin: 0;
   padding: 0;
@@ -214,7 +218,7 @@ h2 {
   font-size: $default;
   line-height: $p-lh;
   color: $snow;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 // Experience
@@ -249,14 +253,38 @@ h2 {
   font-family: $font-header;
   font-size: $small;
   font-weight: $regular;
-  opacity: .3;
+  opacity: 0.3;
   text-transform: uppercase;
 }
 // role description
 .exp-description ul {
   list-style: none;
   font-weight: $regular;
-  opacity: .6;
+  opacity: 0.6;
+}
+// resume link
+.text-link-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+}
+.text-link {
+  font-size: $default;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dk-grey;
+}
+.text-link:hover {
+  color: $navy;
+  stroke: $navy;
+  cursor: pointer;
+}
+.text-link-icon {
+  height: 12px;
+  margin-left: 8px;
+  stroke: $dk-grey;
 }
 
 // Projects
@@ -272,6 +300,7 @@ h2 {
 .card {
   width: 300px;
   padding: 0;
+  // background-color: $sap;
 }
 .card-thumbnail {
   width: 100%;
@@ -279,35 +308,50 @@ h2 {
   border-radius: 3px;
 }
 .card-header {
-  width: 100%;
+  --header-color: #{$snow};
+  --header-stroke: #{$snow};
+  --header-weight: #{$light};
+  --header-opacity: 0.6;
   display: flex;
   flex-flow: row nowrap;
   justify-content: left;
   align-items: baseline;
+  text-decoration: none;
   gap: 8px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  color: var(--header-color);
+
+  h3 {
+    font-family: $font-header;
+    font-size: $h3;
+    font-weight: var(--header-weight);
+    color: var(--header-color);
+    margin: 0;
+    transition: inherit;
+  }
+  .live-link-icon { // demo link icon
+    stroke: var(--header-stroke);
+    opacity: var(--header-opacity);
+    fill: none; // Ensure no fill
+    transition: inherit;
+  }
+  &:hover {
+    --header-weight: #{$emphasis};
+    --header-opacity: 1;
+  }
 }
-.card-header img { //link to demo
-  height: 10px;
-  opacity: .6
-}
-.card-header img:hover {
-  opacity: 1;
-}
-.card h3 {
-  font-family: $font-header;
-  font-size: $h3;
-  font-weight: $light;
-}
+
 .card-description {
   list-style: none;
   display: block;
   font-weight: $regular;
   line-height: $d-lh;
-  opacity: .6;
+  opacity: 0.6;
 }
 .source-link { // gh link
   height: 20px;
-  opacity: .7;
+  opacity: 0.7;
 }
 .source-link:hover {
   opacity: 1;
@@ -327,7 +371,7 @@ h2 {
   color: $snow;
   background: $sap;
   padding: 3px 6px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 // Contact
@@ -361,14 +405,12 @@ footer {
 }
 .contact-link img {
   height: 20px;
-  opacity: .6;
+  opacity: 0.6;
 }
 .contact-link img:hover {
   opacity: 1;
   cursor: pointer;
 }
-
-
 
 /* Media Queries */
 // mobileS: `max-width: 330px`,
@@ -380,8 +422,6 @@ footer {
   //   // background: green;
   // }
 }
-
-
 
 // >>    // mobileL: `max-width: 480px`,
 // Tablets
@@ -445,9 +485,6 @@ footer {
   }
 }
 
-
-
-
 // tabletS: `max-width: 600px`,
 // >>    // tabletL: `max-width: 768px`,
 // desktopXS: `max-width: 900px`,
@@ -463,10 +500,9 @@ footer {
   }
 }
 
-
 //>>    // desktopS: `max-width: 1080px`,
-    // desktopM: `max-width: 1200px`,
-    // desktopL: `max-width: 1400px`,
+// desktopM: `max-width: 1200px`,
+// desktopL: `max-width: 1400px`,
 // Desktop & Large
 @media only screen and (min-width: 1025px) {
 }

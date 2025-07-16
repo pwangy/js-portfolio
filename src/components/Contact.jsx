@@ -4,7 +4,7 @@ import { getImageUrl } from '../utils'
 
 export const Contact = () => {
     const listSocials = socials.map((social, id) => (
-        <ContactItem key={id} iconSrc={getImageUrl(`contact/${social.iconName}`)} href={social.href} label={social.label} altText={social.altText} external={social.external} />
+        <ContactItem key={id} iconSrc={getImageUrl(`icons/${social.iconName}`)} href={social.href} label={social.label} altText={social.altText} external={social.external} />
     ))
 
     return (
