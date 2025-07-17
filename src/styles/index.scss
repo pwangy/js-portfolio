@@ -330,10 +330,10 @@ h2 {
     margin: 0;
     transition: inherit;
   }
-  .live-link-icon { // demo link icon
+  .live-link-icon {
     stroke: var(--header-stroke);
     opacity: var(--header-opacity);
-    fill: none; // Ensure no fill
+    fill: none;
     transition: inherit;
   }
   &:hover {
