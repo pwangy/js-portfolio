@@ -2,7 +2,6 @@
   {
     "role": "Freelance",
     "organisation": "",
-    "type": "wrk",
     "startDate": "Jun 2004",
     "endDate": "Present",
     "experiences": "",
@@ -12,12 +11,12 @@
       "Node"
     ],
     "location": "Berkeley, CA, US",
+    "type": "wrk",
     "link": ""
   },
   {
     "role": "Software Engineering",
     "organisation": "Flatiron School",
-    "type": "ed",
     "startDate": "",
     "endDate": "May 2024",
     "experiences": [
@@ -30,12 +29,12 @@
       "Node"
     ],
     "location": "New York, NY, US",
+    "type": "ed",
     "link": "https://flatironschool.com/"
   },
   {
     "role": "Developer (Contract)",
     "organisation": "Blocket AB (Schibsted ASA)",
-    "type": "wrk",
     "startDate": "Sept 2022",
     "endDate": "Mar 2023",
     "experiences": [
@@ -48,12 +47,12 @@
       "Node"
     ],
     "location": "Stockholm, Sweden",
+    "type": "wrk",
     "link": "https://www.blocket.se/"
   },
   {
     "role": "Web Developer (Contract)",
     "organisation": "Reason Studios AB",
-    "type": "wrk",
     "startDate": "Sept 2021",
     "endDate": "Mar 2022",
     "experiences": [
@@ -66,12 +65,12 @@
       "Node"
     ],
     "location": "Stockholm, Sweden",
+    "type": "wrk",
     "link": "https://www.reasonstudios.com/"
   },
   {
     "role": "Frontend Web Development",
     "organisation": "Technigo",
-    "type": "ed",
     "startDate": "",
     "endDate": "Feb 2021",
     "experiences": "\"24-week program focused on MERN stack (MongoDB, Express, React, Node.js)\"",
@@ -81,12 +80,12 @@
       "Node"
     ],
     "location": "Stockholm, Sweden",
+    "type": "ed",
     "link": "https://www.technigo.io/"
   },
   {
     "role": "UX Design Student",
     "organisation": "General Assembly",
-    "type": "ed",
     "startDate": "",
     "endDate": "Dec 2015",
     "experiences": "\"12-week program\"",
@@ -96,12 +95,12 @@
       "Node"
     ],
     "location": "San Francisco, CA, US",
+    "type": "ed",
     "link": "https://generalassemb.ly/"
   },
   {
     "role": "Various Roles",
     "organisation": "Great Place to Work, US",
-    "type": "wrk",
     "startDate": "May 2012 ",
     "endDate": "Aug 2018",
     "experiences": [
@@ -114,12 +113,12 @@
       "Node"
     ],
     "location": "San Francisco, CA, US",
+    "type": "wrk",
     "link": "https://www.greatplacetowork.com/"
   },
   {
     "role": "Product Design",
     "organisation": "Brunel University London",
-    "type": "ed",
     "startDate": 2006,
     "endDate": 2007,
     "experiences": "\"Exchange Year\"",
@@ -129,12 +128,12 @@
       "Node"
     ],
     "location": "Uxbridge, UK",
+    "type": "ed",
     "link": "https://www.brunel.ac.uk/"
   },
   {
     "role": "Graphic & Product Design",
     "organisation": "San Francisco State University",
-    "type": "ed",
     "startDate": "",
     "endDate": "Jan 2009",
     "experiences": "\"Bachelor of Arts, Industrial Arts - Graphic and Product Design\"",
@@ -144,6 +143,7 @@
       "Node"
     ],
     "location": "San Francisco, CA, US",
+    "type": "ed",
     "link": "https://www.sfsu.edu/"
   }
 ]

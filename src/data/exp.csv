@@ -1,11 +1,11 @@
-role,organisation,type,startDate,endDate,experiences,tech,location,link
-Freelance,,wrk,Jun 2004,Present,,"[""React"",""Express"",""Node""]","Berkeley, CA, US",
-Software Engineering,Flatiron School,ed,,May 2024,"[""Ford & Lovelace Fellow (selected for academic excellence and commitment to diversity in tech)"", 
-""15-week intensive program focused on PRF stack (Python, React, Flask, SQL)""]","[""React"",""Express"",""Node""]","New York, NY, US",https://flatironschool.com/
-Developer (Contract),Blocket AB (Schibsted ASA),wrk,Sept 2022,Mar 2023,"[""Worked on Windows 11"",""Designed the control panel""]","[""React"",""Express"",""Node""]","Stockholm, Sweden",https://www.blocket.se/
-Web Developer (Contract),Reason Studios AB,wrk,Sept 2021,Mar 2022,"[""Worked on component library"",""Helped create UI components""]","[""React"",""Express"",""Node""]","Stockholm, Sweden",https://www.reasonstudios.com/
-Frontend Web Development,Technigo,ed,,Feb 2021,"""24-week program focused on MERN stack (MongoDB, Express, React, Node.js)""","[""React"",""Express"",""Node""]","Stockholm, Sweden",https://www.technigo.io/
-UX Design Student,General Assembly,ed,,Dec 2015,"""12-week program""","[""React"",""Express"",""Node""]","San Francisco, CA, US",https://generalassemb.ly/
-Various Roles,"Great Place to Work, US",wrk,May 2012 ,Aug 2018,"[""Worked on component library"",""Helped create UI components""]","[""React"",""Express"",""Node""]","San Francisco, CA, US",https://www.greatplacetowork.com/
-Product Design,Brunel University London,ed,2006,2007,"""Exchange Year""","[""React"",""Express"",""Node""]","Uxbridge, UK",https://www.brunel.ac.uk/
-Graphic & Product Design,San Francisco State University,ed,,Jan 2009,"""Bachelor of Arts, Industrial Arts - Graphic and Product Design""","[""React"",""Express"",""Node""]","San Francisco, CA, US",https://www.sfsu.edu/
+role,organisation,startDate,endDate,experiences,tech,location,type,link
+Freelance,,Jun 2004,Present,,"[""React"",""Express"",""Node""]","Berkeley, CA, US",wrk,
+Software Engineering,Flatiron School,,May 2024,"[""Ford & Lovelace Fellow (selected for academic excellence and commitment to diversity in tech)"", 
+""15-week intensive program focused on PRF stack (Python, React, Flask, SQL)""]","[""React"",""Express"",""Node""]","New York, NY, US",ed,https://flatironschool.com/
+Developer (Contract),Blocket AB (Schibsted ASA),Sept 2022,Mar 2023,"[""Worked on Windows 11"",""Designed the control panel""]","[""React"",""Express"",""Node""]","Stockholm, Sweden",wrk,https://www.blocket.se/
+Web Developer (Contract),Reason Studios AB,Sept 2021,Mar 2022,"[""Worked on component library"",""Helped create UI components""]","[""React"",""Express"",""Node""]","Stockholm, Sweden",wrk,https://www.reasonstudios.com/
+Frontend Web Development,Technigo,,Feb 2021,"""24-week program focused on MERN stack (MongoDB, Express, React, Node.js)""","[""React"",""Express"",""Node""]","Stockholm, Sweden",ed,https://www.technigo.io/
+UX Design Student,General Assembly,,Dec 2015,"""12-week program""","[""React"",""Express"",""Node""]","San Francisco, CA, US",ed,https://generalassemb.ly/
+Various Roles,"Great Place to Work, US",May 2012 ,Aug 2018,"[""Worked on component library"",""Helped create UI components""]","[""React"",""Express"",""Node""]","San Francisco, CA, US",wrk,https://www.greatplacetowork.com/
+Product Design,Brunel University London,2006,2007,"""Exchange Year""","[""React"",""Express"",""Node""]","Uxbridge, UK",ed,https://www.brunel.ac.uk/
+Graphic & Product Design,San Francisco State University,,Jan 2009,"""Bachelor of Arts, Industrial Arts - Graphic and Product Design""","[""React"",""Express"",""Node""]","San Francisco, CA, US",ed,https://www.sfsu.edu/
